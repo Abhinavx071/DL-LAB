@@ -1,10 +1,10 @@
-# 📝 Text Generation using RNN and LSTM
+# Text Generation using RNN and LSTM
 
 ### Comparison of One-Hot Encoding vs Trainable Word Embeddings
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project explores how different word representation techniques affect text generation performance using recurrent neural networks. Two encoding strategies were implemented and compared:
 
@@ -20,7 +20,7 @@ The goal is to analyze how representation choice impacts learning efficiency, co
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 * Implement RNN and LSTM models from scratch using PyTorch
 * Train models on a poetry dataset
@@ -29,7 +29,7 @@ The goal is to analyze how representation choice impacts learning efficiency, co
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The dataset consists of **100 poems** stored in a CSV file with a single column:
 
@@ -46,9 +46,9 @@ During preprocessing:
 
 ---
 
-## ⚙️ Model Architectures
+## Model Architectures
 
-### 1️⃣ One-Hot Models
+### One-Hot Models
 
 Input words are converted into sparse vectors where only one index is active.
 
@@ -57,7 +57,7 @@ Input words are converted into sparse vectors where only one index is active.
 
 ---
 
-### 2️⃣ Embedding Models
+### Embedding Models
 
 Words are converted into dense trainable vectors.
 
@@ -66,7 +66,7 @@ Words are converted into dense trainable vectors.
 
 ---
 
-## 🧠 Training Configuration
+## Training Configuration
 
 | Parameter       | Value        |
 | --------------- | ------------ |
@@ -83,7 +83,7 @@ Batch sizes:
 
 ---
 
-## 📊 Final Results
+## Final Results
 
 | Model          | Final Loss |
 | -------------- | ---------- |
@@ -95,7 +95,7 @@ Batch sizes:
 
 ---
 
-## 📈 Observations
+## Observations
 
 * Embedding-based models learned significantly faster than one-hot models.
 * One-hot representations produced extremely large sparse inputs, making training inefficient.
@@ -105,7 +105,7 @@ Batch sizes:
 
 ---
 
-## 🏆 Conclusion
+## Conclusion
 
 The experiment demonstrates that **word representation is as important as model architecture** in natural language processing tasks. While RNN and LSTM architectures influence sequence learning, the choice of encoding method has a larger impact on training efficiency and final performance. Dense trainable embeddings consistently outperform one-hot encodings because they provide meaningful vector representations rather than sparse symbolic inputs.
 
